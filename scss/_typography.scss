@@ -1,0 +1,16 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: $header-font, serif;
+}
+
+body {
+	font-family: $body-font, sans-serif;
+	font-size: $base-size;
+}
+
+p, label {
+	font-size: $font-size;
+}
+
+input {
+	font-size: 1em;
+}

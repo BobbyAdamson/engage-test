@@ -1,0 +1,121 @@
+@import 'variables';
+
+* {
+	box-sizing: border-box;
+}	
+
+form {
+	border-top: 1px solid #efefef;
+}
+
+fieldset {
+	width: 100%;
+	position: relative;
+	float: left;
+	border: none;
+	border-bottom: 1px solid #efefef;
+	&>span, &>legend {
+		width: 150px;
+		display: block;
+		float: left;
+		position: relative;
+		padding: 10px 20px;
+		font-size: $font-size;
+	}
+}
+
+label {
+	padding: 10px;
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	span, input {
+		width: 100%;
+	}
+	input {
+		border: 1px solid $lt-grey;
+		padding: 10px;
+		border-radius: 4px;
+	}
+	&.state input {
+		text-transform: uppercase;
+	}
+}
+
+.terms {
+	
+}
+
+@media screen and (min-width: 768px) {
+	label {
+		span {
+			width: 150px;
+			display: block;
+			float: left;
+			position: relative;
+			padding: 10px;
+		}	
+		input {
+			width: 100%;
+			margin-left: -150px;
+			float: right;
+			&[type="radio"], &[type="checkbox"] {
+				width: auto;
+				margin: 0;
+				float: left;
+				border: none;
+				&+span {
+					width: auto;
+				}
+			}
+		}
+	}
+	
+	.inner {
+		margin-left: 150px;
+		.grid-container {
+			margin-left: -150px;
+			width: 100%;
+			float: right;
+		}
+	}
+	
+	label.state, label.zip {
+		span {
+			width: 70px;
+		}
+		.inner {
+			margin-left: 70px;
+		}
+		input {
+			margin-left: -70px;
+		}
+	}
+}
+
+#overlay {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	background: rgba(0,0,0, .7);
+}
+
+#terms {
+	position: absolute; /* makes the div go into a position that’s absolute to the browser viewing area */
+    left: 25%; /* positions the div half way horizontally */
+    top: 25%; /* positions the div half way vertically */
+    padding: 25px; 
+    border: 2px solid black;
+    background-color: #ffffff;
+    width: 50%;
+    height: auto;
+    z-index: 100;
+}
+
+select {
+	margin-top: 15px;
+}

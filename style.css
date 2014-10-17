@@ -1,0 +1,175 @@
+@charset "UTF-8";
+.grid-container {
+  position: relative;
+  float: left; }
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  margin: 0 auto; }
+
+.grid-3 {
+  width: 25%; }
+
+.grid-4 {
+  width: 33.333%; }
+
+.grid-6 {
+  width: 50%; }
+
+.grid-8 {
+  width: 66.666%; }
+
+.grid-9 {
+  width: 75%; }
+
+.grid-12 {
+  width: 100%; }
+
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6; }
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7; }
+
+.parsley-errors-list {
+  margin: 2px 0 3px 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in; }
+
+.parsley-errors-list.filled {
+  opacity: 1; }
+
+.parsley-errors-list {
+  position: relative;
+  display: block;
+  float: right;
+  width: 100%; }
+
+#gender .parsley-errors-list, #marketing .parsley-errors-list {
+  width: auto; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px; }
+
+p, label {
+  font-size: 1.6em; }
+
+input {
+  font-size: 1em; }
+
+* {
+  box-sizing: border-box; }
+
+form {
+  border-top: 1px solid #efefef; }
+
+fieldset {
+  width: 100%;
+  position: relative;
+  float: left;
+  border: none;
+  border-bottom: 1px solid #efefef; }
+  fieldset > span, fieldset > legend {
+    width: 150px;
+    display: block;
+    float: left;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 1.6em; }
+
+label {
+  padding: 10px;
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%; }
+  label span, label input {
+    width: 100%; }
+  label input {
+    border: 1px solid #bbbbbb;
+    padding: 10px;
+    border-radius: 4px; }
+  label.state input {
+    text-transform: uppercase; }
+
+@media screen and (min-width: 768px) {
+  label span {
+    width: 150px;
+    display: block;
+    float: left;
+    position: relative;
+    padding: 10px; }
+  label input {
+    width: 100%;
+    margin-left: -150px;
+    float: right; }
+    label input[type="radio"], label input[type="checkbox"] {
+      width: auto;
+      margin: 0;
+      float: left;
+      border: none; }
+      label input[type="radio"] + span, label input[type="checkbox"] + span {
+        width: auto; }
+
+  .inner {
+    margin-left: 150px; }
+    .inner .grid-container {
+      margin-left: -150px;
+      width: 100%;
+      float: right; }
+
+  label.state span, label.zip span {
+    width: 70px; }
+  label.state .inner, label.zip .inner {
+    margin-left: 70px; }
+  label.state input, label.zip input {
+    margin-left: -70px; } }
+#overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7); }
+
+#terms {
+  position: absolute;
+  /* makes the div go into a position that’s absolute to the browser viewing area */
+  left: 25%;
+  /* positions the div half way horizontally */
+  top: 25%;
+  /* positions the div half way vertically */
+  padding: 25px;
+  border: 2px solid black;
+  background-color: #ffffff;
+  width: 50%;
+  height: auto;
+  z-index: 100; }
+
+select {
+  margin-top: 15px; }

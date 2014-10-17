@@ -1,0 +1,42 @@
+@import 'variables';
+
+.grid-container, .container {
+	
+}
+
+.grid-container {
+	position: relative;
+	float: left;
+}
+
+.container {
+	width: 100%;
+	max-width: $max-width;
+	position: relative;
+	margin: 0 auto;
+}
+
+.grid-3 {
+		width: 25%;
+	}
+	
+	.grid-4 {
+		width: 33.333%;
+	}
+	
+	.grid-6 {
+		width: 50%;
+	}
+	
+	.grid-8 {
+		width: 66.666%;
+	}
+	
+	.grid-9 {
+		width: 75%;
+	}
+	
+	.grid-12 {
+		width: 100%;
+	}
+	
